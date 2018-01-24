@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C++," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="湖南长沙 2015-CCSU 热情技术热爱生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小子">
-<meta property="og:url" content="http://www.zhoubin.wang/index.html">
+<meta name="description" content="顶层const与底层const①如果关键字出现在星号左边表明被指物是常量；如果星号出现在右边，表明指针自身是常量；如果出现在星号两边，表明被指物和指针都是常量12345678int i = 0, j = 3;float k= 1;int* const p = &amp;amp;i; //表明指针p是一个常量不可以改变p = &amp;amp;j;	          //错误const int *p1 = &amp;am">
+<meta name="keywords" content="C++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="尽可能使用const">
+<meta property="og:url" content="http://www.zhoubin.wang/2018/01/22/尽可能使用const/index.html">
 <meta property="og:site_name" content="小子">
-<meta property="og:description" content="湖南长沙 2015-CCSU 热情技术热爱生活">
+<meta property="og:description" content="顶层const与底层const①如果关键字出现在星号左边表明被指物是常量；如果星号出现在右边，表明指针自身是常量；如果出现在星号两边，表明被指物和指针都是常量12345678int i = 0, j = 3;float k= 1;int* const p = &amp;amp;i; //表明指针p是一个常量不可以改变p = &amp;amp;j;	          //错误const int *p1 = &amp;am">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-24T12:08:33.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小子">
-<meta name="twitter:description" content="湖南长沙 2015-CCSU 热情技术热爱生活">
+<meta name="twitter:title" content="尽可能使用const">
+<meta name="twitter:description" content="顶层const与底层const①如果关键字出现在星号左边表明被指物是常量；如果星号出现在右边，表明指针自身是常量；如果出现在星号两边，表明被指物和指针都是常量12345678int i = 0, j = 3;float k= 1;int* const p = &amp;amp;i; //表明指针p是一个常量不可以改变p = &amp;amp;j;	          //错误const int *p1 = &amp;am">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://www.zhoubin.wang/"/>
+  <link rel="canonical" href="http://www.zhoubin.wang/2018/01/22/尽可能使用const/"/>
 
 
 
 
 
-  <title>小子</title>
+  <title>尽可能使用const | 小子</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -279,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/22/尽可能使用const/" itemprop="url">尽可能使用const</a></h1>
+          <h1 class="post-title" itemprop="name headline">尽可能使用const</h1>
         
 
         <div class="post-meta">
@@ -364,16 +363,16 @@
       
 
       
-        
-          <h3 id="顶层const与底层const"><a href="#顶层const与底层const" class="headerlink" title="顶层const与底层const"></a>顶层const与底层const</h3><p>①如果关键字出现在星号左边表明被指物是常量；如果星号出现在右边，表明指针自身是常量；如果出现在星号两边，表明被指物和指针都是常量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int i = 0, j = 3;</span><br><span class="line">float k= 1;</span><br><span class="line"></span><br><span class="line">int* const p = &amp;i; //表明指针p是一个常量不可以改变</span><br><span class="line">p = &amp;j;	          //错误</span><br><span class="line"></span><br><span class="line">const int *p1 = &amp;i;//表明被指物是常量不可以改变，即*p1不可以改变</span><br><span class="line">*p1 = j;           //错误</span><br></pre></td></tr></table></figure></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/22/尽可能使用const/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h3 id="顶层const与底层const"><a href="#顶层const与底层const" class="headerlink" title="顶层const与底层const"></a>顶层const与底层const</h3><p>①如果关键字出现在星号左边表明被指物是常量；如果星号出现在右边，表明指针自身是常量；如果出现在星号两边，表明被指物和指针都是常量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int i = 0, j = 3;</span><br><span class="line">float k= 1;</span><br><span class="line"></span><br><span class="line">int* const p = &amp;i; //表明指针p是一个常量不可以改变</span><br><span class="line">p = &amp;j;	          //错误</span><br><span class="line"></span><br><span class="line">const int *p1 = &amp;i;//表明被指物是常量不可以改变，即*p1不可以改变</span><br><span class="line">*p1 = j;           //错误</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>②声明迭代器为const就像声明指针为const一样，表明这个迭代器不得指向不同的东西，但所指东西的值可以改变。如果希望迭代器所指的东西不可改动，则是const_iterator。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;int&gt; vec&#123; 1,2,3,4,5 &#125;;</span><br><span class="line">	const vector&lt;int&gt;::iterator iter = vec.begin();</span><br><span class="line">	*iter = 10;   </span><br><span class="line">	iter++;      //错误iter不可以被改变</span><br><span class="line"></span><br><span class="line">	vector&lt;int&gt;::const_iterator cIter = vec.begin();</span><br><span class="line">	*cIter=10    //错误*cIter不可以被改变</span><br></pre></td></tr></table></figure></p>
+<p>③令函数返回一个常量值，可以降低客户错误而造成的意外，又不至于放弃安全性和高效性。</p>
+<h3 id="bitwise-constness和logical-constness"><a href="#bitwise-constness和logical-constness" class="headerlink" title="bitwise constness和logical constness"></a>bitwise constness和logical constness</h3><p>①bitwise constness阵营的人相信,成员函数只有在不更改对象之任何成员变量时才可以说是const。也就是说不更改对象内任何一个bit。但下面有个反例。</p>
+<p>&lt; !–more–&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class CtextBlock</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	CtextBlock(char *str)</span><br><span class="line">	&#123;</span><br><span class="line">		pText = new char[100];</span><br><span class="line">		strcpy(pText, str);</span><br><span class="line">	&#125;</span><br><span class="line">	char&amp; operator[](size_t position) const</span><br><span class="line">	&#123;</span><br><span class="line">		return pText[position];</span><br><span class="line">	&#125;</span><br><span class="line">private:</span><br><span class="line">	char *pText;	</span><br><span class="line">const CtextBlock cctb(&quot;hello&quot;);</span><br><span class="line">char *pc = &amp;cctb[0];</span><br><span class="line">*pc = &apos;J&apos;;//这时候cctb就变成了&quot;Jello&quot;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>②logical constness阵营的人认为一个const函数可以修改它所处理对象内的某些bits，这个时候可以用mutable关键字。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class CTextBlock</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	size_t length() const;</span><br><span class="line">private:</span><br><span class="line">	char * pText;</span><br><span class="line">	mutable size_t textLength;</span><br><span class="line">	mutable bool lengthIsValid;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">size_t CTextBlock::length() const</span><br><span class="line">&#123;</span><br><span class="line">	if (!lengthIsValid)</span><br><span class="line">	&#123;</span><br><span class="line">		textLength = strlen(pText);</span><br><span class="line">		lengthIsValid = true;</span><br><span class="line">	&#125;</span><br><span class="line">	return textLength;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>###当const和non-const成员函数有着实质的等价实现时，令non-const版本调用const版本可避免代码重复。反过来则不行</p>
+
       
     </div>
     
@@ -388,14 +387,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag"># C++</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -405,10 +410,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -416,6 +422,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -436,8 +446,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -523,6 +542,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#顶层const与底层const"><span class="nav-number">1.</span> <span class="nav-text">顶层const与底层const</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bitwise-constness和logical-constness"><span class="nav-number">2.</span> <span class="nav-text">bitwise constness和logical constness</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -668,6 +703,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
