@@ -394,7 +394,7 @@
           <h3 id="顶层const与底层const"><a href="#顶层const与底层const" class="headerlink" title="顶层const与底层const"></a>顶层const与底层const</h3><p>①如果关键字出现在星号左边表明被指物是常量；如果星号出现在右边，表明指针自身是常量；如果出现在星号两边，表明被指物和指针都是常量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int i = 0, j = 3;</span><br><span class="line">float k= 1;</span><br><span class="line"></span><br><span class="line">int* const p = &amp;i; //表明指针p是一个常量不可以改变</span><br><span class="line">p = &amp;j;	          //错误</span><br><span class="line"></span><br><span class="line">const int *p1 = &amp;i;//表明被指物是常量不可以改变，即*p1不可以改变</span><br><span class="line">*p1 = j;           //错误</span><br></pre></td></tr></table></figure></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/01/22/尽可能使用const/#espandi" rel="contents">
+            <a class="btn" href="/2018/01/22/尽可能使用const/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
