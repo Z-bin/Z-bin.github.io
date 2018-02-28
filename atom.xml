@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zhoubin.wang/"/>
-  <updated>2018-02-28T13:23:56.691Z</updated>
+  <updated>2018-02-28T13:24:58.359Z</updated>
   <id>http://www.zhoubin.wang/</id>
   
   <author>
@@ -21,16 +21,13 @@
     <link href="http://www.zhoubin.wang/2018/02/27/Unity-%E7%BC%96%E8%BE%91%E5%99%A8%E7%BB%93%E6%9E%84/"/>
     <id>http://www.zhoubin.wang/2018/02/27/Unity-编辑器结构/</id>
     <published>2018-02-27T14:36:31.000Z</published>
-    <updated>2018-02-28T13:23:56.691Z</updated>
+    <updated>2018-02-28T13:24:58.359Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>本文目的意在熟悉编辑器的结构，懂得各视图所起到的功能【有待填坑的地方】。<br>Unity版本：5.6.of03,Windows系统。<br>参考文献：《Unity3D游戏开发》-宣雨松著</p><h3 id="创建工程"><a href="#创建工程" class="headerlink" title="创建工程"></a>创建工程</h3><p>打开Unity编辑器后再左上角“File” → “New Project” 然后可输入工程名称，即可创建一个新的工程。打开一个工程为“File” → “Open Project”,选择所要打开的工程即可。<br><code>Unity窗口</code><br><img src="http://p3x96gu8q.bkt.clouddn.com/Unity-Open.png" alt=""></p><h3 id="Project视图"><a href="#Project视图" class="headerlink" title="Project视图"></a>Project视图</h3><p>Project视图主要存放资源文件，包括游戏脚本、预设、材质、动画、自定义字体等，在Project视图左上角点击“Create”按钮，将出现一个下拉列表。<br><img src="http://p3x96gu8q.bkt.clouddn.com/Proejct%E8%A7%86%E5%9B%BE.png" alt=""></p><ul><li>Folder：文件夹，用于资源的分类。</li><li>C# Scrippt：C#脚本文件。</li><li>Javascript：Jasvascript脚本文件。</li><li>Prefab：预设，用于场景中游戏对象的克隆。</li><li>Render Texture：渲染贴图。</li><li>Material: 材质，用于为模型添加颜色与贴图。</li><li>Animation：游戏动画。</li><li>Physic Material：物理材质。</li><li>Shader：</li><li>Testing：</li><li>Scene：</li><li>Audio Mixer：</li><li>Lens Flare：</li><li>Lighmap Parameters：</li><li>Sprites：</li><li>Animator Controller：</li><li>Animator Override Controler：</li><li>Avatar Mask：</li><li>GUI Skin：<br>创建完资源后，将保存在工程根目录的“Assets”文件夹中，也可导入现有资源到Project视图中，可采用拖拽方式或者右击“Assets” → “Import Package”即可。</li></ul><h3 id="Hirarchy视图"><a href="#Hirarchy视图" class="headerlink" title="Hirarchy视图"></a>Hirarchy视图</h3><p>主要存放游戏场景中具体的游戏对象，如摄像机，平面贴图，3D贴图，光源，箱子等。<br><img src="http://p3x96gu8q.bkt.clouddn.com/Hierarchy%E8%A7%86%E5%9B%BE.png" alt=""></p><ul><li>3D Object：3D对象如立方体，球体，圆柱体等。</li><li>2D Object：2D对象。</li><li>Light：光源如点光源，定向光源等。</li><li>Audio：音频。</li><li>Video：视频。</li><li>UI：UI控件如平面滑动条等。</li></ul><h3 id="Inspector视图"><a href="#Inspector视图" class="headerlink" title="Inspector视图"></a>Inspector视图</h3><p>可以理解成为存放游戏对象、游戏资源、游戏设置以及展示描述信息的地方，无论你是选择一个游戏对象，还是控件时，Inspector将展示选择对象的信息，参数，修改Inspector视图的参数后可以在Game视图中看到修改后的效果。</p><h3 id="Scene视图"><a href="#Scene视图" class="headerlink" title="Scene视图"></a>Scene视图</h3><p>存放游戏中的模型资源。</p><h3 id="Game视图"><a href="#Game视图" class="headerlink" title="Game视图"></a>Game视图</h3><p>展示游戏效果的地方。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>本文目的意在熟悉编辑器的结构，懂得各视图所起到的功能【有待填坑的地方】。<br>Unity版本：5.6.of03,Windows系统。<br>参考文献：《Unity3D游戏开发》-宣雨松著<br><a id="more"></a></p><h3 id="创建工程"><a href="#创建工程" class="headerlink" title="创建工程"></a>创建工程</h3><p>打开Unity编辑器后再左上角“File” → “New Project” 然后可输入工程名称，即可创建一个新的工程。打开一个工程为“File” → “Open Project”,选择所要打开的工程即可。<br><code>Unity窗口</code><br><img src="http://p3x96gu8q.bkt.clouddn.com/Unity-Open.png" alt=""></p><h3 id="Project视图"><a href="#Project视图" class="headerlink" title="Project视图"></a>Project视图</h3><p>Project视图主要存放资源文件，包括游戏脚本、预设、材质、动画、自定义字体等，在Project视图左上角点击“Create”按钮，将出现一个下拉列表。<br><img src="http://p3x96gu8q.bkt.clouddn.com/Proejct%E8%A7%86%E5%9B%BE.png" alt=""></p><ul><li>Folder：文件夹，用于资源的分类。</li><li>C# Scrippt：C#脚本文件。</li><li>Javascript：Jasvascript脚本文件。</li><li>Prefab：预设，用于场景中游戏对象的克隆。</li><li>Render Texture：渲染贴图。</li><li>Material: 材质，用于为模型添加颜色与贴图。</li><li>Animation：游戏动画。</li><li>Physic Material：物理材质。</li><li>Shader：</li><li>Testing：</li><li>Scene：</li><li>Audio Mixer：</li><li>Lens Flare：</li><li>Lighmap Parameters：</li><li>Sprites：</li><li>Animator Controller：</li><li>Animator Override Controler：</li><li>Avatar Mask：</li><li>GUI Skin：<br>创建完资源后，将保存在工程根目录的“Assets”文件夹中，也可导入现有资源到Project视图中，可采用拖拽方式或者右击“Assets” → “Import Package”即可。</li></ul><h3 id="Hirarchy视图"><a href="#Hirarchy视图" class="headerlink" title="Hirarchy视图"></a>Hirarchy视图</h3><p>主要存放游戏场景中具体的游戏对象，如摄像机，平面贴图，3D贴图，光源，箱子等。<br><img src="http://p3x96gu8q.bkt.clouddn.com/Hierarchy%E8%A7%86%E5%9B%BE.png" alt=""></p><ul><li>3D Object：3D对象如立方体，球体，圆柱体等。</li><li>2D Object：2D对象。</li><li>Light：光源如点光源，定向光源等。</li><li>Audio：音频。</li><li>Video：视频。</li><li>UI：UI控件如平面滑动条等。</li></ul><h3 id="Inspector视图"><a href="#Inspector视图" class="headerlink" title="Inspector视图"></a>Inspector视图</h3><p>可以理解成为存放游戏对象、游戏资源、游戏设置以及展示描述信息的地方，无论你是选择一个游戏对象，还是控件时，Inspector将展示选择对象的信息，参数，修改Inspector视图的参数后可以在Game视图中看到修改后的效果。</p><h3 id="Scene视图"><a href="#Scene视图" class="headerlink" title="Scene视图"></a>Scene视图</h3><p>存放游戏中的模型资源。</p><h3 id="Game视图"><a href="#Game视图" class="headerlink" title="Game视图"></a>Game视图</h3><p>展示游戏效果的地方。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;本文目的意在熟悉编辑器的结构，懂得各视图所起到的功能【有待填坑的地方】。&lt;br&gt;Unity版本：5.6.of03,Windows系统。&lt;br
-      
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;本文目的意在熟悉编辑器的结构，懂得各视图所起到的功能【有待填坑的地方】。&lt;br&gt;Unity版本：5.6.of03,Windows系统。&lt;br&gt;参考文献：《Unity3D游戏开发》-宣雨松著&lt;br&gt;
     
     </summary>
     
